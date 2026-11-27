@@ -1,0 +1,34 @@
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+.cart-backdrop.is-open,
+.detail-modal.is-open {
+  display: flex;
+}
+
+.cart-backdrop.is-open {
+  display: block;
+}
+
+.cart-drawer.is-open {
+  transform: translateX(0);
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#category-filters::-webkit-scrollbar {
+  height: 5px;
+}
+
+#category-filters::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 9999px;
+}
